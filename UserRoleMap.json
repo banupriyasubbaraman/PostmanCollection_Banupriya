@@ -1,0 +1,89 @@
+[
+    {
+       "requests":[
+			{
+			"name":"Get All Users",
+            "data":[
+				{
+					"Endpoint": "userRoleProgramBatchMap",
+					"statusCode": "200"
+				}								
+					]
+			},
+			{		
+			"name":"Get by UserId",
+			"data":[
+				{					
+					"Endpoint": "userRoleProgramBatchMap/UABC731",
+					"statusCode": "404"
+				},
+				{					
+					"Endpoint": "userRoleProgramBatchMap/@#$%%",
+					"statusCode": "404"
+				},
+				{					
+					"Endpoint": "userRoleProgramBatchMap/12345",
+					"statusCode": "404"
+				},
+				{					
+					"Endpoint": "userRoleProgramBatchMap/U10",
+					"statusCode": "404"
+				},
+				{					
+					"Endpoint": "userRoleProgramBatchMap/abc-@#$12345",
+					"statusCode": "404"
+				},
+				{					
+					"Endpoint": "userRoleProgramBatchMap/",
+					"statusCode": "404"
+				},
+				{					
+					"Endpoint": "userRoleProgramBatchMap/{{userId}}",
+					"statusCode": "200"
+				},
+				{					
+					"Endpoint": "userRoleProgramBatchMap/U45",
+					"statusCode": "200"
+				}
+					]
+			},
+			{
+			"name":"Delete by UserId",
+            "data":[
+				{					
+					"Endpoint": "userRoleProgramBatchMap/deleteAll/UABC731",
+					"statusCode": "404"
+				},
+				{					
+					"Endpoint": "userRoleProgramBatchMap/deleteAll/@#$%^",
+					"statusCode": "404"
+				},
+				{					
+					"Endpoint": "userRoleProgramBatchMap/deleteAll/67894",
+					"statusCode": "404"
+				},
+				{					
+					"Endpoint": "userRoleProgramBatchMap/deleteAll/U10",
+					"statusCode": "404"
+				},
+				{					
+					"Endpoint": "userRoleProgramBatchMap/deleteAll/ZXY$#67894",
+					"statusCode": "404"
+				},
+				{					
+					"Endpoint": "userRoleProgramBatchMap/deleteAll/",
+					"statusCode": "404"
+				},
+				{
+					"Endpoint": "userRoleProgramBatchMap/deleteAll/{{userId}}",
+					"statusCode": "200"
+				},
+				{
+					"Endpoint": "userRoleProgramBatchMap/deleteAll/U38",
+					"statusCode": "200"
+				}				
+					]
+			}
+					]
+	}
+]
